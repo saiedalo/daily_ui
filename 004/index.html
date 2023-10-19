@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-</head>
-<body>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-rows: repeat(6, 50px);
+        grid-template-columns: repeat(4, minmax(50px,80px));
+        border: 1px solid black;
+      }
+      .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: blue;
+        border: 2px solid chocolate;
+      }
     
-</body>
+      .button {
+        border: 1px solid black;
+      }
+      .output {
+        border: 1px solid black;
+        grid-column: span 4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculator Made With Grid</h1>
+    <div width="100px">
+      <div class="grid-container">
+        <div class="grid-item output">Result</div>
+        <div class="grid-item"><button class="button">Clear</button></div>
+        <div class="grid-item"><button class="button">F1</button></div>
+        <div class="grid-item"><button class="button">F2</button></div>
+        <div class="grid-item"><button class="button">%</button></div>
+        <div class="grid-item"><button class="button">7</button></div>
+        <div class="grid-item"><button class="button">8</button></div>
+        <div class="grid-item"><button class="button">9</button></div>
+        <div class="grid-item"><button class="button">/</button></div>
+        <div class="grid-item"><button class="button">4</button></div>
+        <div class="grid-item"><button class="button">5</button></div>
+        <div class="grid-item"><button class="button">6</button></div>
+        <div class="grid-item"><button class="button">*</button></div>
+        <div class="grid-item"><button class="button">1</button></div>
+        <div class="grid-item"><button class="button">2</button></div>
+        <div class="grid-item"><button class="button">3</button></div>
+        <div class="grid-item"><button class="button">-</button></div>
+        <div class="grid-item"><button class="button">0</button></div>
+        <div class="grid-item"><button class="button">,</button></div>
+        <div class="grid-item"><button class="button">ANS</button></div>
+        <div class="grid-item"><button class="button">+</button></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><button class="button">=</button></div>
+      </div>
+    </div>
+  </body>
 </html>
